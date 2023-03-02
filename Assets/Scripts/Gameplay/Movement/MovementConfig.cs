@@ -2,9 +2,7 @@ using System;
 using UnityEngine;
 
 namespace Gameplay.Movement
-{ 
-
-    
+{
     [Serializable]
     public sealed class MovementConfig
     {
@@ -26,10 +24,10 @@ namespace Gameplay.Movement
         [Min(0.1f)]
         [SerializeField] public float turnAccelerationTime = 0.1f;
 
-        [Header("Leap")]
+        [Header("Dash")]
         [Min(0.1f)]
-        [SerializeField] public float leapLength = 0.1f;
+        [SerializeField] public float DashLength = 0.1f;
         [Min(0.1f)]
-        [SerializeField] public float leapCooldown = 0.1f;
+        [SerializeField] public float DashCooldown = 0.1f;
     }
 }
